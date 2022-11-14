@@ -1,0 +1,19 @@
+//Abstratc
+@import "utils/mixin";
+@import "typo/font.scss";
+
+//base
+@import "base/base";
+@import "base/reset";
+
+
+//pages
+@import "page/home";
+
+
+
+
+
+//layout
+@import "layout/header";
+@import "layout/footer";
