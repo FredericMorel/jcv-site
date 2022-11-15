@@ -29,24 +29,25 @@ export default function Home() {
 
         <div className="home" >
             <section className="home__hero">
-                <h1 className="homeHero__title" >JCV CONSULTING</h1>
+                <h1 className="home__hero__title" >JCV CONSULT</h1>
 
-                <p className="homeHero__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim sit tincidunt non. Laoreet at nibh elit, ridiculus ultrices pellentesque tincidunt ut nunc.</p>
+                <p className="home__hero__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim sit tincidunt non. Laoreet at nibh elit, ridiculus ultrices pellentesque tincidunt ut nunc.</p>
 
 
             </section>
 
             <section className="home__about">
-                <div className="homeAbout__content" >
+                <div className="home__about__content" >
                     <h2>JCV Consulting</h2>
                     <span>Lorem ipsum dolor sit amet consectetur.</span>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Faucibus vitae ornare eu mattis pellentesque morbi et duis condimentum. Sollicitudin risus enim felis nunc vitae. Hac molestie feugiat ipsum faucibus tempor vulputate eu. Ac sed interdum cursus proin.
                     </p>
-                    <Link to={'/About'}>En savoir plus</Link>
+                    <img src={require('../img/About-pic.png')} alt="Apropos image représentation"  />
+                    <Link type="button" to={'/About'}>En savoir plus</Link >
                 </div>
 
-                <img src={require('../img/About-pic.png')} alt="Apropos image représentation" />
+                
 
             </section>
 

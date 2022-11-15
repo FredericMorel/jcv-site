@@ -5,3 +5,28 @@
     src: url("../font/baloo/Baloo2-Bold.ttf");
 }
   */
+
+  @font-face {
+    font-display: swap;
+    font-family: inter-medium;
+    font-weight: medium;
+    src: url(../fonts/Inter-Medium.ttf);
+   }
+   @font-face {
+    font-display: swap;
+    font-family: inter-bold;
+    font-weight: bold;
+    src: url(../fonts/Inter-Bold.ttf);
+   }
+   @font-face {
+    font-display: swap;
+    font-family: inter-regular;
+    font-weight:400;
+    src: url(../fonts/Inter-Regular.ttf);
+   }
+   @font-face {
+    font-display: swap;
+    font-family: raleway-regular;
+    font-weight: 400;
+    src: url(../fonts/Raleway-Regular.ttf);
+   }

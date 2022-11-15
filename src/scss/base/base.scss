@@ -1,7 +1,9 @@
 :root {
     /* background */
- 
-
+    --background-mobile-header: #00473E;
+    --color-white-title: #FFFFFE;
+    --color-main-text: #FFFFFF;
+    --color-green-title:#078080;
     /* btn primary */
 
 
@@ -9,12 +11,16 @@
 
 
     /* text */
- 
+    
+    /*primary-color-text*/
+    
 
     /* stroke */
  
-
-   
-
-    font-size: 62.5%;
-}
+    /*fonts*/
+   --font-regular-inter:inter-regular,serif;
+   --font-bold-inter:inter-bold,serif;
+   --font-medium-inter:inter-medium,serif;
+   --font-regular-raleway:raleway-regular,serif;
+   font-size: 62.5%;
+}   

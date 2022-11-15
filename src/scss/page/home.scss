@@ -1,3 +1,84 @@
-.home{
+.home {
+    width: 100vw;
+    padding: 2.4rem 0;
+    &__hero {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+        flex-direction: column;
+        height: 664px;
+        background: url(../../img/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 100em 1em rgba(0, 0, 0, 0.3);
 
+        &__title {
+            font-size: 3.6rem;
+            font-family: var(--font-bold-inter);
+            color: var(--color-white-title);
+            margin-top: 18.3rem;
+            
+        }
+        &__text{
+            text-align: center;
+            color: var(--color-main-text);
+            margin:3.7rem 2rem 0 ;
+            font-family: var(--font-regular-raleway);
+            font-size: 2rem;
+        }
+    }
+    &__about{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__content{
+            h2{
+                
+                font-family: var(--font-bold-inter);
+                color: var(--color-green-title);
+                font-size: 2.4rem;
+                text-align: center;
+                margin-top: 4.1rem;
+                margin-bottom: 2.8rem;
+
+
+            }
+            span{
+                
+                text-align: center;
+                font-size: 1.8rem;
+                margin-left: 2.6rem;
+                margin-right: 2.5rem;
+                font-family: var(--font-regular-inter);
+                line-height: 2.178rem;
+            }
+            p{
+                margin-top: 1.8rem;
+                text-align: left;
+                width: 32.4rem;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                font-family: var(--font-regular-inter);
+                font-size: 1.8rem;
+                line-height: 2.178rem;
+
+            }
+            img{
+                
+               width: 100%; 
+            }
+
+            a{
+                border:1px solid orangered;
+                text-decoration: none;
+                background-color: yellow;
+            }
+
+        }
+        
+    }
 }
