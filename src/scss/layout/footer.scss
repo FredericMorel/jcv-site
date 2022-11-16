@@ -1,7 +1,5 @@
 .footer{
     width: 100%;
-   
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +32,12 @@
                 margin-top: 28px;
             }
         }
+        div:last-of-type{
+            img{
+                width: 2.9rem;
+                height: 2.9rem;
+            }
+        }
     }
     section{
         @include flexMid;
@@ -44,23 +48,42 @@
         }
         span:first-of-type{
             @include flexMid;
-            img{
+            img:first-of-type{
                 margin-bottom: 49px;
+                width: 8.7rem;
+                height: 4.1rem;
             }
+            img:last-of-type{
+                width: 5.429rem;
+                height: 4.1rem;
+            };
         }
         .copyright{
             font-family: var(--font-regular-inter);
             line-height: 2.42rem;
             font-size: 2rem;
         }
-        span:last-of-type{
-            width: max-content;
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
             height: 2.423rem;
-            line-height: 2.423rem ;
+            line-height: 2.42rem ;
             margin-bottom: 3.77rem;
             font-family: var(--font-regular-inter);
-            line-height: 2.42rem;
+            line-height: 2.507rem;
             font-size: 2rem;
+            
+            .btn__light{
+                width: 3.2rem;
+                height: 2.485rem;
+                margin-left: 0.4rem;
+            } 
+            .btn__dark{
+                width: 3.6rem;
+                height: 2.507rem;
+            }
         }
     }
 

@@ -37,7 +37,7 @@ export default function Product() {
 
                     <div className="product__info" >
 
-                        <h2>Caractéritiques</h2>
+                        <h2>Caractéristiques</h2>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suscipit pellentesque in tristique commodo mattis in. Pellentesque odio ultricies dictumst sed adipiscing viverra integer augue elementum. Ut amet, feugiat feugiat sit. Nunc porttitor adipiscing viverra porttitor nascetur aliquam.</p>
 

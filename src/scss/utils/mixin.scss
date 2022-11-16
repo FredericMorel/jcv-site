@@ -1,12 +1,15 @@
 $breakpoints:(
     "small":(
         min-width: 576px
+        // tablette
     ),
     "medium":(
         min-width: 992px
+        // ipad pro
     ),
     "large":(
         min-width: 1300px
+        // pc
     )
 );
 
@@ -17,6 +20,7 @@ $breakpoints:(
         }
     }
 }
+
 
 @mixin flexMid {
     display: flex;

@@ -40,10 +40,12 @@ export default function Footer() {
                 <span className="copyright">
                     Copyright JCV Consulting 2022
                 </span>
-                <span>
-                    Thème: Black / White
-                    {/* TODO: add switch Theme Dark Light */}
-                </span>
+                <div>
+                    <span> Thème</span>
+                    <img className="btn__light" src={require('../img/light-theme-btn.png')} alt="bouton thème clair" />
+                    <img className="btn__dark"  src={require('../img/dark-theme-btn.png')} alt="bouton thème sombre" />
+                </div>
+                
             </section>
         </footer>
     );

@@ -29,15 +29,15 @@ export default function Home() {
 
         <div className="home" >
             <section className="home__hero">
-                <h1 className="home__hero__title" >JCV CONSULT</h1>
+                <h1 className="homeHero__title" >JCV CONSULT</h1>
 
-                <p className="home__hero__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim sit tincidunt non. Laoreet at nibh elit, ridiculus ultrices pellentesque tincidunt ut nunc.</p>
+                <p className="homeHero__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim sit tincidunt non. Laoreet at nibh elit, ridiculus ultrices pellentesque tincidunt ut nunc.</p>
 
 
             </section>
 
             <section className="home__about">
-                <div className="home__about__content" >
+                <div className="homeAbout__content" >
                     <h2>JCV Consulting</h2>
                     <span>Lorem ipsum dolor sit amet consectetur.</span>
                     <p>
@@ -51,15 +51,17 @@ export default function Home() {
 
             </section>
 
+
             <section className="home__products">
 
                 <h3>Catégorie de produits</h3>
-
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
                 {loading === true ? <p>Chargement...</p> : categories.map((category: apiCategories) => {
                     return (
 
-                        <Link key={category.id} className="homeProducts__category" to={'/products/' + category.id} >
+                        <Link key={category.id} className="card" to={'/products/' + category.id} >
                             <img src={Api.url + category.attributes.pic.data.attributes.url} alt="" />
+                            <p>shadow</p>
                             <h4>{category.attributes.name}</h4
                             >
                             <button>Voir Produit</button>
