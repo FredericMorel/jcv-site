@@ -44,10 +44,10 @@ export default function Home() {
                         Lorem ipsum dolor sit amet consectetur. Faucibus vitae ornare eu mattis pellentesque morbi et duis condimentum. Sollicitudin risus enim felis nunc vitae. Hac molestie feugiat ipsum faucibus tempor vulputate eu. Ac sed interdum cursus proin.
                     </p>
                     <img src={require('../img/About-pic.png')} alt="Apropos image représentation"  />
-                    <Link type="button" to={'/About'}>En savoir plus</Link >
+                    
                 </div>
 
-                
+                <Link type="button" to={'/About'}>En savoir plus</Link >
 
             </section>
 

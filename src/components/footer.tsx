@@ -10,14 +10,14 @@ export default function Footer() {
                 <img src={require('../img/logo-jcv.png')} alt="" />
                 <div>
                     <span>Liens rapide</span>
-                    <span>Lorem</span>
-                    <span>Lorem</span>
-                    <span>Lorem</span>
+                    <span>Accueil</span>
+                    <span>Produits</span>
+                    <span>Devis</span>
                 </div>
                 <div>
-                    <span>Themes</span>
-                    <span>Lorem</span>
-                    <span>Lorem</span>
+                    <span>Thèmes</span>
+                    <span>Ecologie</span>
+                    <span>Sécurité</span>
                     <span>Lorem</span>
                     <span>Lorem</span>
                 </div>
@@ -28,8 +28,8 @@ export default function Footer() {
                     <span>La reunion 97410</span>
                 </div>
                 <div>
-                    <span>Suivez moi</span>
-                    <img src={require('../img/facebook-logo.svg')} alt="" />
+                    <span className="followMe">Suivez moi</span>
+                    <img src={require('../img/logo-facebook.png')} alt="logo de facebook" />
                 </div>
             </div>
             <section>
@@ -37,10 +37,11 @@ export default function Footer() {
                     <img src={require('../img/logo_region.png')} alt="" />
                     <img src={require('../img/europe.png')} alt="" />
                 </span>
-                <span>
+                <span className="copyright">
                     Copyright JCV Consulting 2022
                 </span>
                 <span>
+                    Thème: Black / White
                     {/* TODO: add switch Theme Dark Light */}
                 </span>
             </section>

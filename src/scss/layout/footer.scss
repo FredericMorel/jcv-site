@@ -1,3 +1,67 @@
 .footer{
+    width: 100%;
+   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.4rem ;
+
+    div{
+        @include flexMid;
+        margin-top: 43px;
+        img{
+            width: 19.8rem;
+            margin-bottom: 4.9rem;
+        }
+        div{
+            span{
+                font-family: var(--font-regular-inter);
+                font-size: 1.8rem;
+                line-height: 2.178rem;
+            }
+            span:first-of-type{
+                font-family: var(--font-semiBold-inter);
+                font-size: 2rem;
+                line-height: 2.42rem;    
+            }
+            span:not(:first-of-type){
+                margin-top: 17px;
+            }
+            img{
+                width: 11rem;
+                margin-top: 28px;
+            }
+        }
+    }
+    section{
+        @include flexMid;
+        span{
+            @include flexMid;
+            font-family: var(--font-regular-inter);
+            margin-bottom: 4.077rem;
+        }
+        span:first-of-type{
+            @include flexMid;
+            img{
+                margin-bottom: 49px;
+            }
+        }
+        .copyright{
+            font-family: var(--font-regular-inter);
+            line-height: 2.42rem;
+            font-size: 2rem;
+        }
+        span:last-of-type{
+            width: max-content;
+            height: 2.423rem;
+            line-height: 2.423rem ;
+            margin-bottom: 3.77rem;
+            font-family: var(--font-regular-inter);
+            line-height: 2.42rem;
+            font-size: 2rem;
+        }
+    }
 
 }

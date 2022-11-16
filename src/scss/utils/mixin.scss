@@ -17,3 +17,10 @@ $breakpoints:(
         }
     }
 }
+
+@mixin flexMid {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center; 
+}

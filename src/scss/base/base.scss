@@ -4,6 +4,7 @@
     --color-white-title: #FFFFFE;
     --color-main-text: #FFFFFF;
     --color-green-title:#078080;
+    --color-orange-button:#FA5246;
     /* btn primary */
 
 
@@ -11,7 +12,7 @@
 
 
     /* text */
-    
+    text-decoration: none;
     /*primary-color-text*/
     
 
@@ -20,7 +21,10 @@
     /*fonts*/
    --font-regular-inter:inter-regular,serif;
    --font-bold-inter:inter-bold,serif;
+   --font-semiBold-inter:inter-semiBold ;
    --font-medium-inter:inter-medium,serif;
    --font-regular-raleway:raleway-regular,serif;
    font-size: 62.5%;
 }   
+
+
