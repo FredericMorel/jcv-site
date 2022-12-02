@@ -18,17 +18,17 @@ export default function Header() {
             </div>
             <nav className="header__nav">    
                 <ul className="headerNav__list">
-                    <li>
-                        <Link to="/">Accueil</Link>
+                    <li className="NavList_li" >
+                        <Link className="listLi_a" to="/">Accueil</Link>
                     </li>
-                    <span>Service <img src={require('../img/list-icon.png')} alt="" width="25px" height="25px"/></span>
-                    <ul>
+                    <span className="headerNavList_span">Services  <img className="listSpan__img" src={require('../img/list-icon.png')} alt="" width="25px" height="25px"/></span>
+                    <ul className="headerNavList_ul">
                         <li>Chauffe-eau</li>
-                        <li>Photovoltaïque</li>
-                        <li>Sécurité</li>
+                        <li className="listUl_li--margin-left">Photovoltaïque</li>
+                        <li className="listUl_li--margin-left">Sécurité</li>
                     </ul>
-                    <li>
-                        <Link to="/contact">Demander un devis</Link>
+                    <li className="headerNavList_contact">
+                        <Link className="listContact_a" to="/contact">Demander un devis</Link>
                     </li>
                 </ul>
             </nav>

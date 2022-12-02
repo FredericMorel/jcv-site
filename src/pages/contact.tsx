@@ -25,9 +25,9 @@ export default function Contact() {
                         <input type="tel" name="phone" id="phone" placeholder="Votre numéro de téléphone" />
                     </div>
 
-                    <div>
-                        <label htmlFor="message">Message *</label>
-                        <textarea name="message" id="message" cols={30} rows={10} placeholder="Votre message" />
+                    <div className="message">
+                        <label className="message_label" htmlFor="message">Message *</label>
+                        <textarea className="message_text-area"name="message" id="message" cols={30} rows={10} placeholder="Votre message" />
                     </div>
 
                     <button>Envoyer</button>

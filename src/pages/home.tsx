@@ -6,6 +6,8 @@ import { apiCategories } from "../interface";
 
 
 
+
+
 export default function Home() {
     const [loading, setLoading] = useState<boolean>(true);
     const [categories, setCategories] = useState<apiCategories[]>([]);
@@ -14,7 +16,6 @@ export default function Home() {
     useEffect(() => {
         ApiGetAllCategories().then((data: apiCategories[]) => {
             setCategories(data);
-
             setLoading(false);
 
         })
@@ -29,9 +30,12 @@ export default function Home() {
 
         <div className="home" >
             <section className="home__hero">
-                <h1 className="homeHero__title" >JCV CONSULT</h1>
+                <span className="homeHero__filter">
+                    <h1 className="homeHero__title" >JCV CONSULT</h1>
 
-                <p className="homeHero__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim sit tincidunt non. Laoreet at nibh elit, ridiculus ultrices pellentesque tincidunt ut nunc.</p>
+                    <p className="homeHero__text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dignissim sit tincidunt non. Laoreet at nibh elit, ridiculus ultrices pellentesque tincidunt ut nunc.</p>
+                </span>
+
 
 
             </section>
@@ -43,8 +47,8 @@ export default function Home() {
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Faucibus vitae ornare eu mattis pellentesque morbi et duis condimentum. Sollicitudin risus enim felis nunc vitae. Hac molestie feugiat ipsum faucibus tempor vulputate eu. Ac sed interdum cursus proin.
                     </p>
-                    <img src={require('../img/About-pic.png')} alt="Apropos image représentation"  />
-                    
+                    <img src={require('../img/About-pic.png')} alt="Apropos image représentation" />
+
                 </div>
 
                 <Link type="button" to={'/About'}>En savoir plus</Link >
@@ -54,17 +58,20 @@ export default function Home() {
 
             <section className="home__products">
 
-                <h3>Catégorie de produits</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h3 className="homeProducts__title">Catégorie de produits</h3>
+                <p className="homeProducts__text">Lorem ipsum dolor sit amet consectetur.</p>
                 {loading === true ? <p>Chargement...</p> : categories.map((category: apiCategories) => {
                     return (
-
                         <Link key={category.id} className="card" to={'/products/' + category.id} >
-                            <img src={Api.url + category.attributes.pic.data.attributes.url} alt="" />
-                            <p>shadow</p>
-                            <h4>{category.attributes.name}</h4
+                            <div className="card__image" style={{
+                                backgroundImage: `url(${Api.url + category.attributes.pic.data.attributes.url
+                                    })`
+                            }}
+                            > </div>
+
+                            <h4 className="card__title">{category.attributes.name}</h4
                             >
-                            <button>Voir Produit</button>
+                            <button className="card__button">Voir Produit</button>
                         </Link>
                     )
                 })}

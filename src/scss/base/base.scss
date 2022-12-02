@@ -1,6 +1,7 @@
 :root {
     /* background */
     --background-mobile-header: #00473E;
+    --bg-medium-header: #fffffe;
     //--background-
     
     
@@ -18,6 +19,10 @@
     --color-green-title:#078080;
     --color-orange-button:#FA5246;
     /*primary-color-text*/
+    --text-primary-color:#FFFFFE;
+    --text-secondary-color:#FFFFFF;
+    --text-tertiary-color:#00473E;
+     
     
 
 
@@ -29,13 +34,14 @@
     //--padding-large pour la PC
      
     /*fonts*/
-   --font-regular-inter:inter-regular,serif;
-   --font-bold-inter:inter-bold,serif;
-   --font-semiBold-inter:inter-semiBold ;
-   --font-medium-inter:inter-medium,serif;
-   --font-regular-raleway:raleway-regular,serif;
-   font-size: 62.5%;
   
+   font-size: 62.5%;
+
+
+   /* Border */
+  --border-primary-color: 1px solid yellow;
+  --border-secondary-color: 1px solid rgb(116, 255, 227);
+  --border-tertiary-color: 1px solid rgb(217, 255, 0);
 }   
 
 
